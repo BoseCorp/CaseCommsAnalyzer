@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.13)
 
-project(SimpleSerialAnalyzer)
+project(CaseCommsAnalyzer)
 
 add_definitions( -DLOGIC2 )
 
@@ -13,14 +13,14 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 include(ExternalAnalyzerSDK)
 
 set(SOURCES 
-src/SimpleSerialAnalyzer.cpp
-src/SimpleSerialAnalyzer.h
-src/SimpleSerialAnalyzerResults.cpp
-src/SimpleSerialAnalyzerResults.h
-src/SimpleSerialAnalyzerSettings.cpp
-src/SimpleSerialAnalyzerSettings.h
-src/SimpleSerialSimulationDataGenerator.cpp
-src/SimpleSerialSimulationDataGenerator.h
+src/CaseCommsAnalyzer.cpp
+src/CaseCommsAnalyzer.h
+src/CaseCommsAnalyzerResults.cpp
+src/CaseCommsAnalyzerResults.h
+src/CaseCommsAnalyzerSettings.cpp
+src/CaseCommsAnalyzerSettings.h
+src/CaseCommsSimulationDataGenerator.cpp
+src/CaseCommsSimulationDataGenerator.h
 )
 
 add_analyzer_plugin(${PROJECT_NAME} SOURCES ${SOURCES})
